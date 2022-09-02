@@ -14,5 +14,3 @@ def timeConversion(s):
 # print(timeConversion('07:05:45PM'))
 # print(timeConversion('12:05:45AM'))
 # print(timeConversion('12:05:45PM'))
-
-
