@@ -16,19 +16,13 @@ def matchResistors(R,n):
                 result_list.append((R[i], target))
     return result_list
 
-# from random import shuffle
-# longlist = [i for i in range(1, 10000)]
-# shuffle(longlist)
-# print(len(matchResistors(longlist, 10001)))
+from random import shuffle
+longlist = [i for i in range(1, 10000)]
+shuffle(longlist)
+print(len(matchResistors(longlist, 10001)))
 
 # print(matchResistors((75,80,90,77,88,91,60,74,73,70,55,93,59),150))
 # print(matchResistors((1,5,5,9,1), 10))    
-
-# def createDictionary(iterable):
-#     dict1 = {}
-#     for i in range(len(iterable)):
-#         dict1 = dict(dict1, **{str(i): iterable[i]})
-#     return dict1
 
 # def matchResistorsBiSearch(R,n):
 #     result_list, d1 = [], {i: R[i] for i in range(len(R))}
@@ -42,21 +36,6 @@ def matchResistors(R,n):
 #         R.pop(0) #Search the pair value except the original value
 #         l = len(R)
 #     return result_list
-
-# def binarySearch(R, target_val, low, high):
-#     while low < high:
-#         mid = int((low + high) / 2)
-#         if(target_val == R[high]):
-#             return high
-#         elif(target_val == R[mid]):
-#             return mid
-#         elif(target_val == R[low]):
-#             return low
-#         elif(target_val > R[mid]):
-#             low = mid + 1
-#         elif(target_val < R[mid]):
-#             high = mid - 1
-#     return 0
 
 # def binarySearch(R, target_val, low, high):
 #     while low < high:
@@ -88,7 +67,7 @@ def matchResistors(R,n):
 #             return pair_list + matchResistorsRecursive(R, n)
 #     return matchResistorsRecursive(R, n)
 
-# Using list methods (o(n) version)
+# Using list methods (O(n) version)
 # def matchResistors(R,n):
 #     R, l = sorted(R), len(R)
 #     result_list = []
