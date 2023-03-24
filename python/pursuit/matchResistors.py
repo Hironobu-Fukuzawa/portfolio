@@ -37,6 +37,17 @@ print(len(matchResistors(longlist, 10001)))
 #         l = len(R)
 #     return result_list
 
+# def binary_search(key, seq):
+#     if seq == []:
+#         return False
+#     mid = len(seq) // 2
+#     if key == seq[mid]:
+#         return True
+#     elif key < seq[mid]:
+#         return binary_search(key, seq[:mid])
+#     else:
+#         return binary_search(key, seq[mid+1:])
+
 # def binarySearch(R, target_val, low, high):
 #     while low < high:
 #         mid = int((low + high) / 2)
