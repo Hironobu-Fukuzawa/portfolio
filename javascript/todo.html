@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>The List that never ends</title>
+    <link rel="stylesheet" href="todo.css">
+    <script src="todo.js" defer></script>
+</head>
+<body onload="bootstrap(); taskManagementFunction();">
+    <nav>
+        <ul>
+            <li><a href="#home" onclick = "event.preventDefault(); taskManagementFunction(); displayfunction('home')">Home</a></li>
+            <li><a href="#add" onclick="event.preventDefault(); displayfunction('add')">Add</a></li>
+            <li><a href="#finish" onclick="event.preventDefault(); displayfunction('finish')">Finish</a></li>
+            <li><a href="#display" onclick="event.preventDefault(); displayfunction('display')">Display</a></li>
+        </ul>
+    </nav>
+    <div id="container">
+        <div id="home">          
+            <p id="completionRate"><h2>Task Progress:  <span id="percentage"></span>  Complete &nbsp; / &nbsp; <span id="taskCount"></span> Urgent Task(s) Remaining (within 1 week)</h2></p>
+        </div>
+        <div class="clear">
+        <div id="add" style="display: none;">
+            <h2 id="addNew">Add a New Task to the List</h2>
+            <form class="left">
+                <label for="task">Task Name:</label>
+                <input type="text" id="task" name="task">
+                <br><br>
+                <label for="priority">Priority:</label>
+                <select id="priority" name="priority">
+                    <option value="high">High</option>
+                    <option value="middle">Middle</option>
+                    <option value="low">Low</option>
+                </select>
+                <br><br>
+                <label for="deadline">Deadline:</label>
+                <input type="date" id="deadline" name="deadline">
+                <br><br>
+                <input type="submit" onclick="event.preventDefault(); addfunction();" value="Submit">
+            </form>
+        </div>
+        <div id="finish" style="display: none;">
+            <h2 id="selectFin">Select a Task to Finish</h2>
+            <form class="left">
+                <label for="serialId">Serial ID:</label>
+                <input type="text" id="serialId" name="serialId">
+                <br><br>
+                <input type="submit" onclick="event.preventDefault(); finishfunction();" value="Finish the task">
+            </form>
+        </div>
+        <div id="display" style="display: none;">
+            <div class="table-frame left">
+                <div class="table-title">
+                    OUSTANDING
+                </div>
+                <!-- Display outstanding list of Tasks -->
+                <table id="displayoutstanding">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Task Name</th>
+                            <th>Priority</th>
+                            <th>Deadline</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-frame left">
+                <div class="table-title">
+                    COMPLETED
+                </div>
+                <!-- Display Completed Tasks -->
+                <table id="displaycompleted">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Task Name</th>
+                            <th>Priority</th>
+                            <th>Deadline</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
