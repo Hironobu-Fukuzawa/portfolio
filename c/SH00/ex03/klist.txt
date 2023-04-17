@@ -1,0 +1,5 @@
+Credentials cache: API:898EAE60-6B47-49C7-B30F-C175CBB2863E
+        Principal: hfukuzaw@42TOKYO.JP
+
+  Issued                Expires               Principal
+Sep  1 22:18:16 2021  Sep  2 08:18:16 2021  krbtgt/42TOKYO.JP@42TOKYO.JP

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+find . -type f -name "*~" -ls -delete -o -name "#*#" -ls -delete
