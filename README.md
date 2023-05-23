@@ -7,7 +7,7 @@ In terms of our group assignment @NUS, we are creating the C-to-C platform of ho
 For the demo detail, please check the following URL.<br>
 https://drive.google.com/file/d/1FCyn1Ssly3UHUu8yRJqYYSAiTVHtkYDa/view?usp=sharing
 
-![Hirefix Web App Basic Software Architecture](Docs/hirefix_demo_basic_system_architecture.png) <br><br>
+![Hirefix Web App Basic Software Architecture](Docs/hirefix_demo_basic_system_architecture.png) 
 
 For the demo detail, please check the following URLs.<br>
 ・Web Screen Demo (Using our original web application) <br>
