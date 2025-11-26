@@ -72,9 +72,3 @@ def verify_registration():
     # print("\n[Registration Verification - None]")
     # print(registration_verification.json(indent=2))
     return registration_verification.json(indent=2)
-
-    
-
-
-
-    
